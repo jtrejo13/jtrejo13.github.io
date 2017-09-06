@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+	<link href="../css/projectPage.css" type="text/css" rel="stylesheet" />
+	<link href="../css/mobile.css" type="text/css" rel="stylesheet" media="screen and (max-device-width: 480px)" />
+	<meta name="viewport" content="width=device-width" />
+</head>
+<body>
+	
+	<h1 style="text-align: center">Huffman Encoding</h1>
+
+	<!-- <div style="text-align: center">
+		(<a href="https://github.com/JKelle/Fifteen-Puzzle-AI" target="_blank">source on Github</a>)
+	</div>
+ -->
+	<div id="photos">
+		<img height="300" src="../assets/huffman/tree.png">
+	</div>
+	
+	<div class="container">
+		<div class="row">
+
+			<div class="col-sm-3">
+			</div>
+
+			<div id="description" class="col-sm-6">
+				
+				<div class="projectParagraph">
+					
+					<h4>About</h4>
+
+					<p>
+					Huffman encoding is an algorithm devised by David A. Huffman of MIT in 1952 for compressing text data to make a file occupy a smaller number of bytes. This relatively simple compression algorithm is powerful enough that variations of it are still used today in computer networks, fax machines, modems, HDTV, and other areas.
+					</p>
+
+					<p>
+					Normally text data is stored in a standard format of 8 bits per character using an encoding called ASCII that maps every character to a binary integer value from 0-255. (ASCII encoding table) The idea of Huffman encoding is to abandon the rigid 8-bits-per-character requirement and use different-length binary encodings for different characters. The advantage of doing this is that if a character occurs frequently in the file, such as the common letter 'e', it could be given a shorter encoding (fewer bits), making the file smaller. The tradeoff is that some characters may need to use encodings that are longer than 8 bits, but this is reserved for characters that occur infrequently, so the extra cost is worth it.
+					</p>
+					
+					<p>
+					The four steps involved in Huffman encoding a given text source file into a destination compressed file are:
+					
+					<ol>
+						<li><b>count character frequencies (buildFrequencyTable):</b> Examine a source file's contents and count the number of occurrences of each character.</li>
+						<li><b>build a Huffman encoding tree (buildEncodingTree):</b> Build a binary tree with a particular structure, where each node represents a character and its count of occurrences in the file. A priority queue is used to help build the tree along the way.</li>
+						<li><b>build a character encoding map (buildEncodingMap):</b> Traverse the binary tree to discover the binary encodings of each character.</li>
+						<li><b>encode the file's data (encodeData):</b> Re-examine the source file's contents, and for each character, output the encoded binary version of that character to the destination file.</li>
+					</ol>
+					
+					</p>
+				
+				</div>
+				
+	<!-- 			<div class="projectParagraph">
+
+					<h4>Challenge</h4>
+
+					<p>
+					
+					</p>
+				
+				</div>
+				
+				<div class="projectParagraph">
+					
+					<h4>Solution</h4>
+
+					<p>
+					
+					</p>
+				
+				</div>
+
+
+				<div class="projectParagraph">
+					
+					<h4>Example Output</h4>
+
+					<p>
+					
+					</p>
+				
+				</div> -->
+				
+				<!-- <div class="projectParagraph">
+
+					<h4>Other Notes</h4>
+
+					<p>
+					This solution isn't optimal, but it provides an upper bound on the depth of the optimal solution. I experimented with <strong>depth limited search</strong>, using this upper bound as the depth limit. This too, however, is too slow.
+					</p>
+
+				</div> -->
+
+				<div class="projectParagraph">
+
+					<h4>Technologies & Concepts</h4>
+					<ul>
+						<li>C++</li>
+						<li>
+						<li>Binary trees</li>
+						<li>Tree traversal</li>
+						<li>Binary I/O streams</li>
+						<ul>
+							<li>Function Declarations</li>
+							<li>Console+File I/O</li>
+							<li>Strings</li>
+							<li>Loops</li>
+							<li>Basic Data Structures: Vector, Grid</li>
+						</ul>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="col-sm-3">
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Start of StatCounter Code for Default Guide -->
+<!-- <script type="text/javascript">
+var sc_project=9972548; 
+var sc_invisible=1; 
+var sc_security="72ffb508"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify visitor
+statistics" href="http://statcounter.com/shopify/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/9972548/0/72ffb508/1/"
+alt="shopify visitor statistics"></a></div></noscript> -->
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>
+
